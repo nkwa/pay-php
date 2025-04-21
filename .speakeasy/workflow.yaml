@@ -1,0 +1,24 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Nkwa Pay API:
+        inputs:
+            - location: /Users/ebaneck/Downloads/nkwa-pay-openapi.json
+        overlays:
+            - location: .speakeasy/speakeasy-modifications-overlay.yaml
+        registry:
+            location: registry.speakeasyapi.dev/nkwa/pay/nkwa-pay-api
+targets:
+    pay:
+        target: php
+        source: Nkwa Pay API
+        publish:
+            packagist:
+                username: $packagist_username
+                token: $packagist_token
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/nkwa/pay/nkwa-pay-api-php-code-samples
+            labelOverride:
+                fixedValue: Php (SDK)
+            blocking: false
