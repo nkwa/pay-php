@@ -1,0 +1,171 @@
+lockVersion: 2.0.0
+id: 21ef5d59-b489-4e58-840c-07a9f56e6e0d
+management:
+  docChecksum: 7b08bcb5e090b20f19793ef405935a31
+  docVersion: 1.0.0
+  speakeasyVersion: 1.535.1
+  generationVersion: 2.585.2
+  releaseVersion: 0.1.1
+  configChecksum: 473b598a275700a50e4bb20dfd537785
+features:
+  php:
+    core: 3.8.4
+    flattening: 2.81.1
+    globalSecurity: 2.81.8
+    globalSecurityFlattening: 0.1.2
+    globalServerURLs: 2.82.1
+    groups: 2.81.2
+    methodArguments: 0.1.0
+    nameOverrides: 2.81.2
+    responseFormat: 0.1.0
+generatedFiles:
+  - .gitattributes
+  - USAGE.md
+  - composer.json
+  - docs/Models/Components/Availability.md
+  - docs/Models/Components/Operation.md
+  - docs/Models/Components/Operator.md
+  - docs/Models/Components/Payment.md
+  - docs/Models/Components/PaymentRequest.md
+  - docs/Models/Components/PaymentStatus.md
+  - docs/Models/Components/PaymentType.md
+  - docs/Models/Components/Security.md
+  - docs/Models/Components/Status.md
+  - docs/Models/Components/TelecomOperator.md
+  - docs/Models/Components/Type.md
+  - docs/Models/Errors/HttpError.md
+  - docs/Models/Operations/GetAvailabilityResponse.md
+  - docs/Models/Operations/GetPaymentsIdRequest.md
+  - docs/Models/Operations/GetPaymentsIdResponse.md
+  - docs/Models/Operations/PostCollectResponse.md
+  - docs/Models/Operations/PostDisburseResponse.md
+  - docs/sdks/availability/README.md
+  - docs/sdks/operators/README.md
+  - docs/sdks/pay/README.md
+  - docs/sdks/payments/README.md
+  - phpstan.neon
+  - phpunit.xml
+  - pint.json
+  - rector.php
+  - src/Availability.php
+  - src/Hooks/AfterErrorContext.php
+  - src/Hooks/AfterErrorHook.php
+  - src/Hooks/AfterSuccessContext.php
+  - src/Hooks/AfterSuccessHook.php
+  - src/Hooks/BeforeRequestContext.php
+  - src/Hooks/BeforeRequestHook.php
+  - src/Hooks/Credentials.php
+  - src/Hooks/ErrorResponseContext.php
+  - src/Hooks/FailEarlyException.php
+  - src/Hooks/HookContext.php
+  - src/Hooks/Hooks.php
+  - src/Hooks/SDKHooks.php
+  - src/Hooks/SDKInitHook.php
+  - src/Hooks/SDKRequestContext.php
+  - src/Hooks/Session.php
+  - src/Hooks/TokenResponse.php
+  - src/Models/Components/Availability.php
+  - src/Models/Components/Operation.php
+  - src/Models/Components/Operator.php
+  - src/Models/Components/Payment.php
+  - src/Models/Components/PaymentRequest.php
+  - src/Models/Components/PaymentStatus.php
+  - src/Models/Components/PaymentType.php
+  - src/Models/Components/Security.php
+  - src/Models/Components/Status.php
+  - src/Models/Components/TelecomOperator.php
+  - src/Models/Components/Type.php
+  - src/Models/Errors/APIException.php
+  - src/Models/Errors/HttpError.php
+  - src/Models/Errors/HttpErrorThrowable.php
+  - src/Models/Operations/GetAvailabilityResponse.php
+  - src/Models/Operations/GetPaymentsIdRequest.php
+  - src/Models/Operations/GetPaymentsIdResponse.php
+  - src/Models/Operations/PostCollectResponse.php
+  - src/Models/Operations/PostDisburseResponse.php
+  - src/Operators.php
+  - src/Pay.php
+  - src/PayBuilder.php
+  - src/Payments.php
+  - src/SDKConfiguration.php
+  - src/Utils/BigDecimalHandler.php
+  - src/Utils/BigIntHandler.php
+  - src/Utils/DateHandler.php
+  - src/Utils/DateTimeHandler.php
+  - src/Utils/DefaultRequest.php
+  - src/Utils/DefaultResponse.php
+  - src/Utils/DefaultStream.php
+  - src/Utils/DefaultUri.php
+  - src/Utils/EnumHandler.php
+  - src/Utils/FormMetadata.php
+  - src/Utils/Headers.php
+  - src/Utils/JSON.php
+  - src/Utils/MixedJSONHandler.php
+  - src/Utils/MultipartMetadata.php
+  - src/Utils/Options.php
+  - src/Utils/ParamsMetadata.php
+  - src/Utils/PathParameters.php
+  - src/Utils/PhpDocTypeParser.php
+  - src/Utils/QueryParameters.php
+  - src/Utils/RequestBodies.php
+  - src/Utils/RequestMetadata.php
+  - src/Utils/Retry/PermanentError.php
+  - src/Utils/Retry/RetryConfig.php
+  - src/Utils/Retry/RetryConfigBackoff.php
+  - src/Utils/Retry/RetryConfigNone.php
+  - src/Utils/Retry/RetryStrategy.php
+  - src/Utils/Retry/RetryUtils.php
+  - src/Utils/Retry/TemporaryError.php
+  - src/Utils/Security.php
+  - src/Utils/SecurityClient.php
+  - src/Utils/SecurityMetadata.php
+  - src/Utils/ServerDetails.php
+  - src/Utils/SpeakeasyMetadata.php
+  - src/Utils/UnionHandler.php
+  - src/Utils/Utils.php
+examples:
+  get_/payments/{id}:
+    speakeasy-default-get-/payments/{id}:
+      parameters:
+        path:
+          id: "96e9ed79-9fef-44a6-9435-0625338ca86a"
+      responses:
+        "200":
+          application/json: {}
+        "401":
+          application/json: {}
+        "500":
+          application/json: {}
+  post_/collect:
+    speakeasy-default-post-/collect:
+      requestBody:
+        application/json: {"amount": 433642, "phoneNumber": "824.805.0012 x8298"}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+  post_/disburse:
+    speakeasy-default-post-/disburse:
+      requestBody:
+        application/json: {"amount": 410119, "phoneNumber": "923.242.7389 x02568"}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+  get_/availability:
+    speakeasy-default-get-/availability:
+      responses:
+        "200":
+          application/json: [{}, {}, {}]
+        "401":
+          application/json: {}
+        "500":
+          application/json: {}
+examplesVersion: 1.0.1
+generatedTests: {}

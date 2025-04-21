@@ -1,0 +1,38 @@
+speakeasyVersion: 1.535.1
+sources:
+    Nkwa Pay API:
+        sourceNamespace: nkwa-pay-api
+        sourceRevisionDigest: sha256:85f93adc0a724b3fca226925af95ec3d707d665a2412f3470b2e6fbf1dd55d21
+        sourceBlobDigest: sha256:9d062a9f7cd563e6183a2a1f3158b277aabc425de59a0b062440802ba6383340
+        tags:
+            - latest
+            - 1.0.0
+targets:
+    pay:
+        source: Nkwa Pay API
+        sourceNamespace: nkwa-pay-api
+        sourceRevisionDigest: sha256:85f93adc0a724b3fca226925af95ec3d707d665a2412f3470b2e6fbf1dd55d21
+        sourceBlobDigest: sha256:9d062a9f7cd563e6183a2a1f3158b277aabc425de59a0b062440802ba6383340
+        codeSamplesNamespace: nkwa-pay-api-php-code-samples
+        codeSamplesRevisionDigest: sha256:d6d6490b2f758f505797af305284958a57dc3bbdbceaf530e32ed68027a46f40
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Nkwa Pay API:
+            inputs:
+                - location: /Users/ebaneck/Downloads/nkwa-pay-openapi.json
+            overlays:
+                - location: .speakeasy/speakeasy-modifications-overlay.yaml
+            registry:
+                location: registry.speakeasyapi.dev/nkwa/pay/nkwa-pay-api
+    targets:
+        pay:
+            target: php
+            source: Nkwa Pay API
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/nkwa/pay/nkwa-pay-api-php-code-samples
+                labelOverride:
+                    fixedValue: Php (SDK)
+                blocking: false
