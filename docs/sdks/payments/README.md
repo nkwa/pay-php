@@ -79,7 +79,7 @@ $sdk = Pay\Pay::builder()
 
 $request = new Components\PaymentRequest(
     amount: 834011,
-    phoneNumber: '736.296.8541 x549',
+    phoneNumber: '237650000000',
 );
 
 $response = $sdk->payments->collect(
@@ -131,7 +131,7 @@ $sdk = Pay\Pay::builder()
 
 $request = new Components\PaymentRequest(
     amount: 382447,
-    phoneNumber: '374-849-7684 x81648',
+    phoneNumber: '237650000000',
 );
 
 $response = $sdk->payments->disburse(

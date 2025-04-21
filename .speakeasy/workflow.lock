@@ -2,8 +2,8 @@ speakeasyVersion: 1.535.1
 sources:
     Nkwa Pay API:
         sourceNamespace: nkwa-pay-api
-        sourceRevisionDigest: sha256:48312a23d7f3f756b447734bb97e698f36196c7d775c1837c48ecbdcefdfb4b1
-        sourceBlobDigest: sha256:3046fdca11431b099ea7cee0f6c47a261641c0f3be01e4b718cbed0251c08601
+        sourceRevisionDigest: sha256:740537763c46308de4a36e887a1e2e5711742c545e50b3049275076bbcd9da5d
+        sourceBlobDigest: sha256:517cf74a241cc6872058eafc2876fc21010204ee8e2218f1d95789196eae317d
         tags:
             - latest
             - 1.0.0
@@ -11,10 +11,10 @@ targets:
     pay:
         source: Nkwa Pay API
         sourceNamespace: nkwa-pay-api
-        sourceRevisionDigest: sha256:48312a23d7f3f756b447734bb97e698f36196c7d775c1837c48ecbdcefdfb4b1
-        sourceBlobDigest: sha256:3046fdca11431b099ea7cee0f6c47a261641c0f3be01e4b718cbed0251c08601
+        sourceRevisionDigest: sha256:740537763c46308de4a36e887a1e2e5711742c545e50b3049275076bbcd9da5d
+        sourceBlobDigest: sha256:517cf74a241cc6872058eafc2876fc21010204ee8e2218f1d95789196eae317d
         codeSamplesNamespace: nkwa-pay-api-php-code-samples
-        codeSamplesRevisionDigest: sha256:2b3cea8483814129bee41bb878e65fb7cb41c4d4dacfc294b9bc9a9d8b56e2a6
+        codeSamplesRevisionDigest: sha256:621a23c2bcc171ce78becd72cc32b27a61c2db6f05b74d6dbd42329b18b68a89
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
