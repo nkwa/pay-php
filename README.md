@@ -196,7 +196,7 @@ require 'vendor/autoload.php';
 use Pay;
 
 $sdk = Pay\Pay::builder()
-    ->setServerURL('https://api.staging.nkwapay.mynkwa.com')
+    ->setServerURL('https://api.pay.staging.mynkwa.com')
     ->setSecurity(
         '<YOUR_API_KEY_HERE>'
     )
