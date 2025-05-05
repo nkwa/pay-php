@@ -19,7 +19,7 @@ class Pay
 {
     public const SERVERS = [
         /** Staging server */
-        'https://api.staging.nkwapay.mynkwa.com',
+        'https://api.pay.staging.mynkwa.com',
     ];
 
     public Payments $payments;
